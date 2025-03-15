@@ -613,6 +613,7 @@ require('lazy').setup({
         -- But for many setups, the LSP (`ts_ls`) will work just fine
         -- ts_ls = {},
 
+<<<<<<< HEAD
         stylua = {}, -- Used to format Lua code
 
         -- Special Lua Config, as recommended by neovim help docs
@@ -660,6 +661,7 @@ require('lazy').setup({
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
         -- You can add other tools here that you want Mason to install
+        'autopep8',
       })
 
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
@@ -993,4 +995,5 @@ require('lazy').setup({
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
 
-require 'custom.transparency'
+-- require 'custom.transparency'
+require 'custom.wsl'
