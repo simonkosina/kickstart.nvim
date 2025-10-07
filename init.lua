@@ -1009,6 +1009,3 @@ vim.api.nvim_create_autocmd({ 'VimLeave' }, {
   desc = 'restore the cursor shape on exit of neovim',
   command = 'set guicursor=a:ver20',
 })
-
--- require 'custom.transparency'
-require 'custom.wsl'
